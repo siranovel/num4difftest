@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'num4difftest'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2024-05-18'
   s.summary     = "test of difference!"
   s.description = "test of difference of population mean."
