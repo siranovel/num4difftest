@@ -5,8 +5,8 @@ CONSUMER_KEY = os.environ.get("TWITTER_CONSUMER_KEY")
 CONSUMER_SECRET = os.environ.get("TWITTER_CONSUMER_SECRET")
 ACCESS_KEY = os.environ.get("TWITTER_ACCESS_TOKEN")
 ACCESS_KEY_SECRET = os.environ.get("TWITTER_ACCESS_TOKEN_SECRET")
-tweet = 'New commit pushed! (twitter v2 oauth 1.0a)'
-
+# tweet = 'New commit pushed! (twitter v2 oauth 1.0a)'
+tweet = os.environ.get("text")
 url_text = 'https://api.twitter.com/2/tweets'
 def main():
     #
