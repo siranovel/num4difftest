@@ -1,12 +1,15 @@
 name: tweet bot 5(python oauth1.0a)
 
 on:
-  push:
-    branches: [ main ]
+  workflow_run:
+    workflows: ['Ruby Gem']
+    types: [completed]
 
 jobs:
   tweet:
     runs-on: ubuntu-latest
+
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
     - name: Checkout
       uses: actions/checkout@v4
