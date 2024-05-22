@@ -17,3 +17,4 @@ client = tweepy.Client(
 # ツィートする
 res = client.create_tweet(text=tweet)
 print(res)
+print(res.text)
