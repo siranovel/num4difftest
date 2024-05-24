@@ -6,7 +6,7 @@ CONSUMER_SECRET = os.environ.get("TWITTER_CONSUMER_SECRET")
 ACCESS_KEY = os.environ.get("TWITTER_ACCESS_TOKEN")
 ACCESS_KEY_SECRET = os.environ.get("TWITTER_ACCESS_TOKEN_SECRET")
 tweet = os.environ.get("text")
-
+print(tweet)
 # オブジェクト作成
 client = tweepy.Client(
     consumer_key = CONSUMER_KEY,
