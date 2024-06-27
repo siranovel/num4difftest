@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## [0.1.2] - 2024-06-23
+### chg
+- chg yardoc
+
 ## [0.1.1] - 2024-06-17
 ### add
 - add function of mult2_diff_test and ancova_test in ParametrixTestLib.
