@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'num4difftest'
-  s.version     = '0.1.1'
-  s.date        = '2024-06-17'
+  s.version     = '0.1.2'
+  s.date        = '2024-06-23'
   s.summary     = "test of difference!"
   s.description = "test of difference of population mean."
   s.authors     = ["siranovel"]
