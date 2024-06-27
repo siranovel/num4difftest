@@ -43,13 +43,13 @@ module Num4DiffTestLib
         #   @param  [double] a  有意水準
         #   @return [boolean] 検定結果(true:棄却域内 false:棄却域外)
         # @example
-        #    xi = [
+        #   xi = [
         #        [12.2, 18.8, 18.2],
         #        [22.2, 20.5, 14.6],
         #        [20.8, 19.5, 26.3],
         #        [26.4, 32.5, 31.3],
         #        [24.5, 21.2, 22.4],
-        #    ]
+        #   ]
         #   hypothTest2 = Num4HypothTestLib::TwoSideTestLib.new
         #   paraTest2 = Num4DiffTestLib::ParametrixTestLib.new(hypothTest2)
         #   paraTest2.mult_diff_test(xi, 0.05)
@@ -70,7 +70,7 @@ module Num4DiffTestLib
         #   @param  [double] a  有意水準
         #   @return [Array] 検定結果(boolean[] true:棄却域内 false:棄却域外)
         # @example
-        #    xij = [
+        #   xij = [
         #            [
         #              [13.2, 15.7, 11.9],
         #              [16.1, 15.7, 15.1],
@@ -96,7 +96,7 @@ module Num4DiffTestLib
         #   paraTest2 = Num4DiffTestLib::ParametrixTestLib.new(hypothTest2)
         #   paraTest2.mult2_diff_test(xij, 0.05)
         #   =>
-        #     res = [true, true]
+        #     [true, true]
         def mult2_diff_test(xi1, a)
             raise TypeError unless @hypothTest3.kind_of?(HypothTest3IF)
       
@@ -210,11 +210,11 @@ module Num4DiffTestLib
         #   @param  [double] a  有意水準
         #   @return [boolean] 検定結果(true:棄却域内 false:棄却域外)
         # @example
-        #    xi = [
+        #   xi = [
         #        [12.2, 18.8, 18.2],
         #        [22.2, 20.5, 14.6, 20.8, 19.5, 26.3],
         #        [26.4, 32.5, 31.3, 24.5, 21.2, 22.4],
-        #    ]
+        #   ]
         #   hypothTest2 = Num4HypothTestLib::TwoSideTestLib.new
         #   nonParaTest = Num4DiffTestLib::NonParametrixTestLib.new(hypothTest2)
         #   nonParaTest.mult_diff_test(xi, 0.05)
@@ -231,12 +231,12 @@ module Num4DiffTestLib
         #   @param  [double] a  有意水準
         #   @return [Array] 検定結果(boolean[] true:棄却域内 false:棄却域外)
         # @example
-        #    xij = [
+        #   xij = [
         #        [13.6, 15.6, 9.2],
         #        [22.3, 23.3, 13.3],
         #        [26.7, 28.8, 15.0],
         #        [28.0, 31.2, 15.8],
-        #    ]
+        #   ]
         #   hypothTest2 = Num4HypothTestLib::TwoSideTestLib.new
         #   nonParaTest = Num4DiffTestLib::NonParametrixTestLib.new(hypothTest2)
         #   nonParaTest.mult2_diff_test(xij, a)
