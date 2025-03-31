@@ -11,7 +11,7 @@ num4difftest
 ## VS. ##
 
 ## Requirement ##
-num4tststatistic2ライブラリ
+num4tststatistic2ライブラリ  
 num4anovaライブラリ
 
 ## Usage ##
